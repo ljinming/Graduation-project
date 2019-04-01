@@ -1,6 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {Button} from 'antd';
+import {} from './Columns';
+import './style/style.less';
+import Main from './Main';
+import Search from './Search'
 
 class Volunteer extends React.PureComponent {
   constructor(props) {
@@ -12,18 +15,17 @@ class Volunteer extends React.PureComponent {
     }
   }
   render() {
+    const {prefixCls} = this.props;
     return (
-      <div style={{width:'100%'}}>
-        <Button style={{marginLeft:30}}>kk</Button>
+      <div className={prefixCls}>
+          <div className={`${prefixCls}-left`}>
+          <Search />
+          </div>
+          <Main prefixCls={prefixCls}/>
       </div>
     )
   }
 }
 
-function mapStateToProps(state) {
-  return {
-    //cacl: state.credbBondCacl.data.result
-  }
-}
 
-export default connect(mapStateToProps)(Volunteer);
+export default Volunteer;

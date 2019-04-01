@@ -1,0 +1,47 @@
+.volunteer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    &-left{
+        width: 28%;
+        border: 1px solid #193d37;
+        padding: 5px;
+        height: calc(~'100%-30px');
+     }
+    &-right{
+        width: 100%;
+        height: calc(~'100%-30px');
+        &-main{
+            display: flex;
+            height: 40%;
+            &-left{
+                width: 70%;
+                border: 1px solid #193d37;
+                height: 100%;
+            }
+            &-right{
+                width: 30%;
+                border: 1px solid #193d37;
+                height: 100%;
+            }
+        }
+        &-table{
+            width: 100%;
+            height: 60%;
+        }
+    }
+  &-search{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+}
+
+.search-span{
+  flex-direction: row;
+  color: gray;
+}
