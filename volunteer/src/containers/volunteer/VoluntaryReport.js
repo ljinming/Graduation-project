@@ -30,7 +30,8 @@ class VoluntaryReport extends React.PureComponent {
   };
   render() {
     return (
-      <div style={{textAlign:'center'}}>
+      <div style={{textAlign:'center',  width: '50%',paddingTop: 50,
+        height: '100%', border: '1px solid #193d37'}}>
         <div style={{width:'100%',height:30,textAlign:'center',marginTop:10}}>
           <span style={{fontSize:'16px'}}>志愿模拟填报</span>
           <Select
@@ -54,7 +55,7 @@ class VoluntaryReport extends React.PureComponent {
           <span>分数</span>
           <Input
             onChange={this.handleInputChange}
-            style={{width:300,marginLeft:10}}/>
+            style={{width:260,marginLeft:10}}/>
         </div>
         <Button
           onClick={this.handleSubmit}

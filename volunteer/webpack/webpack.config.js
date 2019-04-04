@@ -16,7 +16,7 @@ const resolve = path.resolve;
 
 const node_modules = resolve(__dirname, '../node_modules');
 const src = resolve(__dirname, '../src');
-const asset = 'static/';
+const asset = 'volunteer/static/';
 const outputPath = resolve(__dirname, '../dist');
 const ENV = process.env.NODE_ENV;
 const BUILD_ENV = process.env.BUILD_ENV || 'prd';

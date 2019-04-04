@@ -29,5 +29,7 @@ export const city=[
   {key:'neiMengGu',value:'内蒙古'},
   {key:'qingHai',value:'青海'},
   {key:'haiNan',value:'海南'},
+];
+export const mark=[
 
 ];

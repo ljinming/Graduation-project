@@ -44,7 +44,7 @@
       "command": "rimraf dist && rimraf build"
     },
     "build:echarts": {
-      "command": "node node_modules/echarts/build/build.js --min -i src/components/echarts/index.js -o dist/js/echarts.min.js",
+      "command": "node node_modules/echarts/build/build.js --min -i src/components/echarts/index.js -o dist/volunteer/static/js/echarts.min.js",
       "env": {
         "NODE_ENV": "production"
       }

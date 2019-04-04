@@ -3,6 +3,7 @@ const assets = [
   '/web-library/react/1.0.0/react-dom.production.min.js',
   '/web-library/react/1.0.0/react-router-dom.min.js',
   '/web-library/worker/1.0.1/SharedWork.5e5638e2.min.js',
+  '/volunteer/static/js/echarts.min.js',
 ];
 module.exports = {
   dev: {

@@ -4,7 +4,7 @@
     height: 100%;
     overflow: auto;
     &-left{
-        width: 28%;
+        width: 30%;
         border: 1px solid #193d37;
         padding: 5px;
         height: calc(~'100%-30px');
@@ -15,13 +15,9 @@
         &-main{
             display: flex;
             height: 40%;
-            &-left{
-                width: 70%;
-                border: 1px solid #193d37;
-                height: 100%;
-            }
-            &-right{
-                width: 30%;
+            &-left,&-right{
+                width: 50%;
+                display: flex;
                 border: 1px solid #193d37;
                 height: 100%;
             }
@@ -39,8 +35,16 @@
     flex-wrap: wrap;
     margin: 10px;
   }
+  &-segment{
+    font-size: 14px;
+    margin:5px;
+    display: flex;
+    &-label{
+      width: 50%;
+      text-align: right;
+    }
+  }
 }
-
 .search-span{
   flex-direction: row;
   color: gray;
