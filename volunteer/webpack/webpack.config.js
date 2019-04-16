@@ -49,9 +49,9 @@ const config = {
     },
   },
   externals: {
-    'react': 'React',
-    'react-dom': 'ReactDOM',
-    'react-router-dom': 'ReactRouterDOM',
+    // 'react': 'React',
+    // 'react-dom': 'ReactDOM',
+    // 'react-router-dom': 'ReactRouterDOM',
     'echarts': 'echarts',
   },
   module: {

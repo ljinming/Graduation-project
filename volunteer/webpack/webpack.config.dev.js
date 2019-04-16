@@ -11,7 +11,7 @@ const config = {
   ],
   devServer: {
     contentBase: base.output.path,
-    port: 3000,
+    port: 4000,
     index: `index.${BUILD_ENV}.html`,
     hot: true,
     https: true,
@@ -20,14 +20,15 @@ const config = {
     },
     proxy: {
       '/api': {
-        target: `http://ssefi-nodeserver.${BUILD_ENV}.sumscope.com:5100`,
+        target: `http://www.zerotop.top:8582`,
         // target: 'http://localhost:5001/',
         pathRewrite: {
-          '^/api/': '/api/'
+          '^/api': ''
         }
       },
       '/web-library': {
-        target: `http://service-ssefi.${BUILD_ENV}.sumscope.com:7998`
+        target: `http://www.zerotop.top:8582`,
+        //target: `http://service-ssefi.${BUILD_ENV}.sumscope.com:7998`
       },
     },
   },

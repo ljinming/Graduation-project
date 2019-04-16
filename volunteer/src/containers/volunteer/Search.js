@@ -1,5 +1,6 @@
 import React from 'react';
-import { Input, Select, Radio } from 'antd';
+import { Input, Radio } from 'antd';
+import Action from '@actions';
 import { city } from './variable'
 import './style/style.less';
 
@@ -8,13 +9,22 @@ class Search extends React.PureComponent {
     super(props);
     this.state = {
       search: '',
-      value: 'heNan',
+      code: '1009',
+      year:'2018',
     }
   }
 
   handleSearch = (value) => {
     this.setState({search: value})
   };
+
+  componentDidMount() {
+    const {code,year} =this.state;
+    const payload={
+    provinceCode:code+year,
+    };
+    Action.emit('volunteer.history',payload)
+  }
 
   handleChange = (e) => {
     this.setState({value: e.target.value})

@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Table from 'fast-table';
-import echarts from 'echarts';
 import { MainColumns } from './Columns';
 import { main } from './data';
 import VoluntaryReport from './VoluntaryReport';
@@ -16,6 +15,9 @@ class Main extends React.PureComponent {
       Jurisdiction: false,
     }
   }
+
+
+
   render() {
     const {prefixCls} = this.props;
     const chart={
@@ -50,4 +52,11 @@ class Main extends React.PureComponent {
     )
   }
 }
-export default Main;
+function mapStateToProps(state) {
+          // console.log('================================');
+          // console.log(state.volunteer.history)
+  return {
+    history:state.volunteer.history,
+  };
+}
+export default connect(mapStateToProps)(Main);

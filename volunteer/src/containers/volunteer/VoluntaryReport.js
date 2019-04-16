@@ -35,7 +35,7 @@ class VoluntaryReport extends React.PureComponent {
         <div style={{width:'100%',height:30,textAlign:'center',marginTop:10}}>
           <span style={{fontSize:'16px'}}>志愿模拟填报</span>
           <Select
-            defaultValue='heNan'
+            defaultValue='1009'
             style={{width:80,marginLeft:10}}>
             {this.renderOption()}
           </Select>
