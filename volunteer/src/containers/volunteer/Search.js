@@ -1,7 +1,6 @@
 import React from 'react';
 import { Input, Radio } from 'antd';
-import Action from '@actions';
-import { city } from './variable'
+import { city,all } from './variable';
 import './style/style.less';
 
 class Search extends React.PureComponent {
@@ -18,13 +17,6 @@ class Search extends React.PureComponent {
     this.setState({search: value})
   };
 
-  componentDidMount() {
-    const {code,year} =this.state;
-    const payload={
-    provinceCode:code+year,
-    };
-    Action.emit('volunteer.history',payload)
-  }
 
   handleChange = (e) => {
     this.setState({value: e.target.value})
@@ -54,6 +46,9 @@ class Search extends React.PureComponent {
                 key={p.key}>{p.value}</Radio.Button>;
             })}
           </Radio.Group>
+          <div>
+
+          </div>
         </div>
       </div>
     )

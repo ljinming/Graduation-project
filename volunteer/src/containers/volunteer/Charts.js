@@ -106,7 +106,7 @@ class Charts extends PureComponent {
   }
 
   render() {
-    return <div ref={(ref) => (this.chart = ref)} />;
+    return <div style={{width:'100%'}} ref={(ref) => (this.chart = ref)} />;
   }
 }
 

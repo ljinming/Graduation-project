@@ -23,7 +23,7 @@ const config = {
         target: `http://www.zerotop.top:8582`,
         // target: 'http://localhost:5001/',
         pathRewrite: {
-          '^/api': ''
+          '^/api/': ''
         }
       },
       '/web-library': {

@@ -49,7 +49,7 @@ const config = {
     },
   },
   externals: {
-    // 'react': 'React',
+    // 'react': 'React ',
     // 'react-dom': 'ReactDOM',
     // 'react-router-dom': 'ReactRouterDOM',
     'echarts': 'echarts',

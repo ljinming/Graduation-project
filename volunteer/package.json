@@ -57,7 +57,7 @@
     "blueimp-md5": "^2.10.0",
     "classnames": "^2.2.6",
     "echarts": "^4.2.0-rc.1",
-    "fast-table": "^1.4.4",
+    "fast-table": "^1.4.7",
     "hoist-non-react-statics": "^3.0.1",
     "js-base64": "^2.4.9",
     "jsonwebtoken": "^8.3.0",
